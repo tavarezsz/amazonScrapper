@@ -1,0 +1,104 @@
+.product_container{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.product_card h3{
+    min-height: 60px;
+}
+
+.product_card a{
+    text-decoration: none;
+    color: black;
+}
+
+.product_card a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.form_container{
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.form_container h1{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(16, 16, 116);
+    max-width: fit-content;
+    max-height: 100%;
+    padding: .25em;
+    color: azure    ;
+}
+
+.custom_btn{
+    padding: .5em;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    color: azure;
+    width: 75px;
+    cursor: pointer;
+}
+.form_container input{
+    margin-top: 1.5em;
+    padding: .5em;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(218, 214, 214);
+}
+
+.img_wrapper{
+
+    display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 200px;
+}
+
+
+.img_wrapper img{
+    object-fit: contain;
+    max-height: 100%;
+}
+
+.loader {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    border: 8px solid #f3f3f3; /* background color */
+    border-top: 8px solid #333; /* animated border color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none;
+}
+
+.failed{
+    margin-left: 2em;
+}

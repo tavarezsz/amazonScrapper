@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Scrapper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form_container">
+        <h1>Amazon Scrapper</h1>
+        <p>Use the input below to search any product you want from amazon!</p>
+        <p>Some prices might be unavailable due to the product having multiple cosmetic/funcional options. You can click on the title to be redirected to the oficial website</p>
+        
+        <input id="keyword" type="text" placeholder="Search keyword here">
+        <button class="custom_btn" id="btnSearch">Search</button>
+    </div>
+    <div id="results" class="product_container"></div>
+    <div id="loader" class="loader hidden"></div>
+
+    <script type="module" src="app.js"></script>
+    
+</body>
+</html>
