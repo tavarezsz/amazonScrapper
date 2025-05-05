@@ -9,9 +9,10 @@ const keyword = document.getElementById("keyword").value;
 resultsDiv.innerHTML = '' //clean previous content
 loader.classList.remove("hidden") //iniatializes loader before the request is sent
 
-const response = await fetch(`/search?q=${keyword}`)//search?q=${keyword}
+const response = await fetch(`/search?q=${keyword}`)
 
 const data = await response.json().then(loader.classList.add("hidden")) //hides loader after receving the response
+
 
 if(response.status == 503){
     resultsDiv.innerHTML = `
@@ -38,6 +39,14 @@ else{
         </p>
         `
     }
+    
+    if(response.status == 500){
+        resultsDiv.innerHTML = `
+        <p class="failed">
+            Connection error, please try again later
+        </p>
+        `
+    }
 
     data.results.forEach(result => {
 
@@ -59,7 +68,7 @@ else{
             <img src="${result.imgLink}" width="100"/>
         </div>
         <p>Price: ${result.price}</p>
-        <p>Rating: ${result.rating.slice(0,-5)} - ${result.reviewNumber} reviews</p>
+        <p>Rating: ${result.rating} stars - ${result.reviewNumber} reviews</p>
         `;
         resultsDiv.appendChild(item)
     }

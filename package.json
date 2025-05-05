@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "bun run main.js",
-    "dev": "bun --watch index.ts"
+    "dev": "bun --watch main.js"
   },
   "devDependencies": {
     "@types/bun": "latest"
