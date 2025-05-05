@@ -12,7 +12,7 @@ how to run:
 bun start
 ```
 
-The server runs by default at http://locahost:3000. Just copy paste it into the browser.
+The server runs by default at http://localhost:3000. Just copy paste it into the browser.
 
 Observations:
 
