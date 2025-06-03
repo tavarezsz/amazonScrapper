@@ -1,6 +1,7 @@
 # amazonscrapper
+This is a small project aimed at scrapping the amazon website and the return the first page of results base on a keyword
 
-To install dependencies(bun must be already installed):
+To install dependencies bun muste be already installed(instalation guide: https://bun.sh/docs/installation):
 
 ```bash
 bun install
@@ -12,7 +13,7 @@ how to run:
 bun start
 ```
 
-The server runs by default at http://localhost:3000. Just copy paste it into the browser.
+The server runs by default at http://localhost:3000. Just copy and paste it into the browser after running the scipt.
 
 Observations:
 
