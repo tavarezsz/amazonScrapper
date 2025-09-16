@@ -1,7 +1,7 @@
 # amazonscrapper
 This is a small project aimed at scrapping the amazon website and the return the first page of results base on a keyword
 
-To install dependencies bun muste be already installed(instalation guide: https://bun.sh/docs/installation):
+To install dependencies bun must already be installed(instalation guide: https://bun.sh/docs/installation):
 
 ```bash
 bun install
